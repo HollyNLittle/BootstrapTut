@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- My sylesheet -->
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- CAROUSEL -->
+
+
+    <!-- *********************************** -->
+    <!-- CAROUSEL -->
+    <div class="bs-example">
+        <!--<data-ride lets the browser know to start the carousel when page loads-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item active"><h3>An amazing vacation spot!  We will be back.</h3>
+                    <img src="images/modern-villa.jpg"  alt="First Slide">
+                </div>
+                <div class="item"><h3>Wondrous views, just gorgeous!</h3>
+                    <img src="images/modern-villa.jpg" alt="Second Slide">
+                </div>
+                <div class="item"><h3>Wow!  The service, luxury, it was like a dream.</h3>
+                    <img src="images/tuscany-villas-sant-anna.jpg" alt="Third Slide">
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron"><h1>Tuscan Villas</h1><p>We specialize in relaxation.</p></div>
+    <!-- THIS IS A WELL -->
+    <!--<div class="well"><h1>This is a WELL</h1><p>A WELL is like a JUMBOTRON but smaller</p></div>-->
+    <!-- JUMBOTRON W/ IMAGE AS BACKGROUND -->
+    <!--<div class="jumbotronImage"><div class="customDiv"><h1>*A Jumbotron with an image background</h1></div></div>-->
+
+    <!-- MORE NAVS -->
+    <div class="container">
+        <div class="row">
+            <!-- 12 = MENU will go across the whole page -->
+            <div class="col-xs-12">
+                <!-- A DROPDOWN MENU; attributes to design the menu-->
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu" data-toggle="dropdown">
+                        <!-- this id links the button to the list that follows -->
+                        Dropdown
+                        <span class="caret"></span>   <!-- the CARET will control the dropdown BUTTON-->
+                    </button>
+                    <!-- NOT WORKING????? -->
+                    <!-- the LIST of LINKS-->
+                    <ul class="dropdown-menu" aria-labelledby="dropdownmenu">
+                        <!-- labelledby = MATCHES the BUTTON's id -->
+                        <li><a href="#">LOCATIONS</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVS!!!!!!!! -->
+    <nav class="nav">
+        <a class="nav-link active" href="#">LOCATIONS</a>
+        <a class="nav-link" href="#">AMENITIES</a>
+        <a class="nav-link" href="#">REVIEWS</a>
+        <a class="nav-link disabled" href="#">CONTACT</a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <ul class="list-group">
+                    <li class="list-group-item active">LOCATIONS</li>
+                    <li class="list-group-item">AMENITIES</li>
+                    <li class="list-group-item">REVIEWS</li>
+                    <li class="list-group-item">CONTACT</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVS!!!!!!!! -->
+    <ul class="nav justify-content-center;">
+
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
+
+
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 bg-success">
+                <p>This is an OUTER div of 12 COLS</p>
+                <div class="row">
+                     this row makes the margin between the inner and outer divs go away
+                    <div class="col-lg-12 col-md-6 bg-primary"><p>This is an inner div of 6 COLS, 6 of the PARENTS' COLS</p></div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- experiment for navbar and logo -->
+    <!-- Image and text -->
+    <!-- NAVBAR W/ LOGO -->
+    <div class="container-fluid">
+        <header class="logoNav">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">LOGO</a>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Locations<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- experiment for checkerboard -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4"><p>ROW # 1: COL # 1: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-4">
+                <div class="photo">
+                    <!-- why does it break without this??????? -->
+                    <div class="customDiv">
+                        <p>ROW # 1: COL # 2: lorem ipsum the lazy brown fox jumped over the fence.</p>
+                        <div class="row">
+                            <div class="col-lg-4"><p>INNER COLUMN.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-lg-4"><p>ROW # 1: COL # 3: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4"><p>ROW #2: COL # 1: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-4"><p>ROW #2: COL # 2: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-4"><p>ROW #2: COL # 3: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4"><p>ROW #3: COL # 1: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-4">
+                <p>ROW #3: COL # 2: lorem ipsum the lazy brown fox jumped over the fence.</p>
+            </div>
+            <div class="col-lg-4"><p>ROW #3: COL # 3: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-2"><p>ROW #4: COL # 1: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-5"><p>ROW #4: COL # 2: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-5"><p>ROW #4: COL # 3: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9"><p>ROW #5: COL # 1: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-1"><p>ROW #5: COL # 2: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-2"><p>ROW #5: COL # 3: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="customDiv">
+                    <p>ROW #6: COL # 1: lorem ipsum the lazy brown fox jumped over the fence.</p>
+                </div>
+            </div>
+            <div class="col-lg-4"><p>ROW #6: COL # 2: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-4">
+                <div class="customDiv">
+                    <p>ROW #6: COL # 3: lorem ipsum the lazy brown fox jumped over the fence.</p>
+                    <div class="row">
+
+
+                        <div class="col-lg-4"><div class="custom"><p>INNER DIV</p></div></div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--GRID = 12 cols, DO 1ST COLS, 2ND ROWS-->
+    <div class="container">
+        <div class="row">
+            small phone, medium tablet, large computer
+            <div class="col-lg-9 col-md-3 col-sm-6 col-xs-12">
+                <div class="customDiv" id="tryID"><p>Column 1</p></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="customDiv"><p>Column 2</p></div>
+            </div>
+            <div class="col-lg-9 col-md-3 col-sm-6 col-xs-12">
+                <div class="customDiv"><p>Column 3</p></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="customDiv tryDiv"><p class="blackBox">*Column 4*</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"><p>LOGO</p></div>
+            <div class="col-lg-10"><nav></nav></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9"><p>ROW #1: COL # 1: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+            <div class="col-lg-3"><p>ROW #1: COL # 2: lorem ipsum the lazy brown fox jumped over the fence.</p></div>
+        </div>
+    </div>
+</body>
+</html>
